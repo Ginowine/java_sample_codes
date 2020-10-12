@@ -17,8 +17,14 @@ class DateAndTime {
         Calendar calendar = Calendar.getInstance();
         calendar.set(year, month -1, day);
         String dayOfWeek = getDay(calendar.get(Calendar.DAY_OF_WEEK));
-
         return dayOfWeek;
+
+//        int mm = in.nextInt();
+//        int dd = in.nextInt();
+//        int yy = in.nextInt();
+//        in.close();
+//        LocalDate dt = LocalDate.of(yy, mm, dd);
+//        System.out.print(dt.getDayOfWeek());
     }
 
     private static String getDay(int dayOfWk){
