@@ -11,17 +11,22 @@ public class CurrencyFormatter {
 
         // Write your code here.
 
+        Locale indiaLocale = new Locale("en", "IN");
+
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance(Locale.US);
         String us = numberFormat.format(payment);
 
         NumberFormat numberFormat1 = NumberFormat.getCurrencyInstance(Locale.CHINA);
         String china = numberFormat1.format(payment);
 
+        NumberFormat numberFormat4 = NumberFormat.getCurrencyInstance(indiaLocale);
+        String india = numberFormat4.format(payment);
+
         NumberFormat numberFormat2 = NumberFormat.getCurrencyInstance(Locale.FRANCE);
         String france = numberFormat2.format(payment);
 
         System.out.println("US: " + us);
-        //System.out.println("India: " + india);
+        System.out.println("India: " + india);
         System.out.println("China: " + china);
         System.out.println("France: " + france);
     }
