@@ -4,7 +4,6 @@ public class Stack<C> {
     public static void main(String []argh)
     {
         Scanner sc = new Scanner(System.in);
-
         while (sc.hasNext()) {
             String input=sc.next();
             java.util.Stack<Character> stacky = new java.util.Stack<Character>();
@@ -28,6 +27,14 @@ public class Stack<C> {
             }
             System.out.println(stacky.isEmpty());
         }
+
+//        YOU CAN ALSO IMPLEMENT THE ABOVE USING THE BELOW BLOCK OF CODE
+//        while (sc.hasNext()) {
+//            String input=sc.next();
+//            //Complete the code
+//            while(input.length() != (input = input.replaceAll("\\(\\)|\\[\\]|\\{\\}", "")).length());
+//            System.out.println(input.isEmpty());
+//        }
 
     }
 }
