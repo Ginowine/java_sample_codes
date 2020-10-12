@@ -8,6 +8,8 @@ public class Stack {
         while (sc.hasNext()) {
             String input=sc.next();
             //Complete the code
+            while(input.length() != (input = input.replaceAll("\\(\\)|\\[\\]|\\{\\}", "")).length());
+            System.out.println(input.isEmpty());
         }
 
     }
