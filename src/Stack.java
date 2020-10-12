@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Stack<C> {
+public class Stack {
     public static void main(String []argh)
     {
         Scanner sc = new Scanner(System.in);
