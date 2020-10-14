@@ -1,7 +1,7 @@
 import java.lang.reflect.Method;
 
 public class Printer {
-    public static <Integer, String> void printArray(Integer[] array){
+    public static <T> void printArray(T[] array){
         for (int i = 0; i < array.length; i++){
             System.out.println(i);
         }
