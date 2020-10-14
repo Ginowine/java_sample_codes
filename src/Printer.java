@@ -1,9 +1,9 @@
 import java.lang.reflect.Method;
 
 public class Printer {
-    public static <T> void printArray(T[] array){
-        for (int i = 0; i < array.length; i++){
-            System.out.println(i);
+    public <T> void printArray(T[] array){
+        for (T items : array){
+            System.out.println(items);
         }
     }
 
