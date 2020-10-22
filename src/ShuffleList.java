@@ -1,7 +1,4 @@
-import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class ShuffleList {
 
@@ -14,5 +11,14 @@ public class ShuffleList {
             Collections.shuffle(list, new Random());
             System.out.println(list);
         }
+    }
+}
+
+//THIS IS ANOTHER IMPLEMENTATION OF THE ABOVE CONCEPT
+class Shuffle {
+    public static void main(String[] args) {
+        List<String> list = Arrays.asList(args);
+        Collections.shuffle(list);
+        System.out.println(list);
     }
 }
