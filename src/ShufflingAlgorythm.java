@@ -13,7 +13,7 @@ public class ShufflingAlgorythm {
         // randomly permutes the elements in a List.
         Collections.shuffle(list);
         for (String str : list) {
-            System.out.println(" Shuffling elements in ascending order  --" + str);
+            System.out.println(" Shuffling elements  --" + str);
         }
     }
 }
