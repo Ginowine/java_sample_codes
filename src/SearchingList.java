@@ -16,7 +16,7 @@ public class SearchingList {
             System.out.println(" sort elements in ascending order  --" + str);
         }
 
-        int index = Collections.binarySearch(list, "element 4");
+        int index = Collections.binarySearch(list, "element 2");
         System.out.println("Element found at ::" + index);
     }
 }
